@@ -1,0 +1,191 @@
+@font-face {
+    font-family: SyneExtra;
+    src: url(assets/Syne-Extra.woff) format('woff'),
+      url(assets/Syne-Extra.woff2) format("woff2"),
+      url(assets/Syne-Extra.eot) format("eot");
+  }
+  
+  @font-face {
+    font-family: SyneBold;
+    src: url(assets/Syne-Bold.woff) format("woff"),
+      url(assets/Syne-Bold.woff2) format("woff2"),
+      url(assets/Syne-Bold.eot) format("eot");
+  }
+  
+  @font-face {
+    font-family: SyneRegular;
+    src: url(assets/Syne-Regular.woff.woff) format("woff"),
+      url(assets/Syne-Regular.woff2) format("woff2"),
+      url(assets/Syne-Regular.eot) format("eot");
+  }
+  
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #ffcdc9;
+    padding: 4em;
+    position: relative;
+  }
+  
+  h1 {
+    display: block;
+    max-width: 40vw;
+    position: fixed;
+  }
+  
+  h1 span {
+    float: left;
+  }
+  
+  h1 .intro-title {
+    font-family: "SyneBold", sans-serif;
+    font-weight: normal;
+    color: #186D6D;
+    font-size: 18px;
+    display: block;
+    border-bottom: 13px solid #FFEC43;
+    width: 180px;
+    padding-bottom: 15px;
+    margin-top: 12px;
+    margin-right: 25px;
+  }
+  
+  h1 .main-title {
+    font-family: "SyneExtra", sans-serif;
+    font-weight: normal;
+    color: #432f50;
+    font-size: 36px;
+    display: block;
+    
+  }
+  
+  .menu {
+    width: 55vw;
+    background-color: #ffcdc9;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4em;
+    min-height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  
+  .menu h2 {
+    font-family: "SyneExtra", sans-serif;
+    font-weight: normal;
+    color: #432f50;
+    font-size: 42px;
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+  
+  .menu h3 {
+    color: #432f50;
+    font-family: "SyneBold", sans-serif;
+    font-weight: normal;
+    font-size: 42px;
+  }
+  
+  .menu p {
+    width: 80%;
+    font-size: 36px;
+    font-family: "SyneRegular", sans-serif;
+    font-weight: normal;
+    color: #432f50;
+    margin-bottom: 2em;
+  }
+  
+  .menu p .menu-info {
+    font-style: italic;
+  }
+  
+  .bring {
+    position: fixed;
+    top: 15em;
+    width: 40vw;
+  }
+  
+  .bring h2 {
+      font-family: "SyneExtra", sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+    color: #432f50;
+    width: 60%;
+  }
+  
+  .bring p {
+      font-size: 36px;
+    font-family: "SyneRegular", sans-serif;
+    font-weight: normal;
+    color: #432f50;
+    margin-bottom: 0.75em;
+  
+  }
+  
+  .bring p.dont {
+    font-size: 1em;
+  }
+  
+  @media only screen and (max-width: 1600px) {
+    .menu {
+      width: 45vw;
+    }
+    
+    .menu p {
+      width: 100%;
+    }
+    
+    .bring h2 {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 1100px) {
+    h1 {
+      position: absolute;
+      max-width: 100%;
+    }
+    
+    .menu {
+      margin-top: 10em;
+    }
+    
+    .bring {
+      margin: 2.5em 0;
+      border-top: 3px solid #FFEC43;
+    }
+    
+    .bring h2 {
+      margin-top: 2.5em;
+    }
+    
+    .menu, .bring {
+      position: static;
+      padding: 0;
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 560px) {
+    h1 span {
+      float: none;
+    }
+    
+    h1 .intro-title {
+      margin-bottom: 15px;
+    }
+    
+    h1, .menu, .bring {
+      position: static;
+    }
+    
+      .menu {
+      margin-top: 6em;
+    }
+  } 
